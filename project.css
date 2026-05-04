@@ -1,0 +1,104 @@
+body {
+    background-color: #012a4a;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 20px;
+    color: beige;
+}
+
+header {
+    background-color: antiquewhite;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    color: #6e332f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #6e332f;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    color: #8b4513;
+    transform: translateY(-2px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+section {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #6e332f;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    color: antiquewhite;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+#hero img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid antiquewhite;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+#hero img:hover{
+    transform: translateY(-10px);
+}
+#hero h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.3rem;
+    color: beige;
+}

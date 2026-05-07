@@ -9,9 +9,15 @@ $(document).ready( function () {
             1000)
         }
     });
-    
-    $('.bar').each( function (index,element) {
-        let W = $(element).attr("data-level");
-        $(element).css("width",W);
+
+    $('#skills').mouseenter(function () {
+        $('.bar').each(function(){
+            if ( Number( $(this).attr("data-moved") == 1 )) {
+            let width = $(this).attr("data-level");
+            $(this).css("width",width);
+            $(this).attr("data-moved", "2");
+            }
+        })
+        
     })
 })

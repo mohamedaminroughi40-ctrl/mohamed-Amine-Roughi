@@ -1,3 +1,7 @@
+*::selection{
+    background-color:antiquewhite;
+    color: #6e332f;
+}
 body {
     background-color: #012a4a;
     font-family: 'Courier New', monospace;
@@ -106,6 +110,7 @@ section h2 {
 .bar {
     background-color: antiquewhite;
     height: 25px;
+    width: 0%;
     border-radius: 10px;
     margin: 10px 0 20px 0;
     transition: width 0.5s ease;

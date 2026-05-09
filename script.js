@@ -30,14 +30,15 @@ $(document).ready( function () {
         }
     });
 
-    $('#skills').mouseenter(function () {
-        $('.bar').each(function(){
-            if ( Number( $(this).attr("data-moved") == 1 )) {
-            let width = $(this).attr("data-level");
-            $(this).css("width",width);
-            $(this).attr("data-moved", "2");
-            }
-        })
-        
-    })
+    $(window).on('scroll', function() {
+    let skillsTop = $('#skills').offset().top + 300;
+    let windowBottom = $(window).scrollTop() + $(window).height();
+    
+    if (skillsTop < windowBottom) {
+        $('.bar').each(function() {
+            let W = $(this).attr('data-level');
+            $(this).css('width', W);
+        });
+    }
+    });
 })

@@ -1,4 +1,24 @@
 $(document).ready( function () {
+
+    $('#hamburger').on('click', function() {
+        $(this).toggleClass('active');
+        $('#nav-menu').toggleClass('active');
+    });
+
+
+    $('#nav-menu a').on('click', function() {
+        $('#hamburger').removeClass('active');
+        $('#nav-menu').removeClass('active');
+    });
+
+    
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('header').length) {
+            $('#hamburger').removeClass('active');
+            $('#nav-menu').removeClass('active');
+        }
+    });
+
     
     $('header a').on("click",function (e) {
         e.preventDefault();

@@ -18,7 +18,6 @@ function ProjectsApp() {
                         Built with SFML for multimedia handling, it demonstrates core concepts like collision 
                         detection, state machines for game entities, and health/damage systems.
                     `,
-            // Using only two images (first and second)
             images: [
                 "assets/game1.png",
                 "assets/game2.png"
@@ -41,7 +40,7 @@ function ProjectsApp() {
             ],
             challenges: "Managing memory efficiently and preventing leaks was the biggest challenge. I learned to use smart pointers and implement proper resource management.",
             learned: "Low-level graphics programming, memory management, game loop architecture",
-            tags: ["C++", "SFML", "2D Platformer", "Game Dev", "Action RPG"],
+            tags: ["C++", "SFML", "2D Platformer", "Game Dev"],
             github: "https://github.com/mohamedaminroughi40-ctrl/game-dupp.git",
         },
         {
@@ -82,7 +81,7 @@ function ProjectsApp() {
                          Managing image filtering performance while avoiding layout shifts required careful DOM manipulation and CSS optimization.`,
             learned: `CSS Grid advanced techniques, custom modal/lightbox implementation from scratch, JavaScript DOM manipulation best practices,
                          Intersection Observer for performance, responsive design without frameworks,`,
-            tags: ["HTML", "CSS", "React", "jQuery"],
+            tags: ["HTML", "CSS", "javaScript"],
             github: "https://github.com/AhmedBenRami/Portfolio.git",
         }
     ];
@@ -120,6 +119,7 @@ function ProjectsApp() {
                                                 GitHub →
                                             </a>
                                         </div>
+                                        <p> click for more information about the project</p>
                                     </div>
                                 </div>
                                 {isExpanded && (

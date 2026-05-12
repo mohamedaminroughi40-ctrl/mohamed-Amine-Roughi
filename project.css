@@ -50,7 +50,7 @@ header a {
     display: inline-block;
 }
 
-header nav ul li a:hover {
+header a:hover {
     color: #8b4513;
     transform: translateY(-2px);
 }
